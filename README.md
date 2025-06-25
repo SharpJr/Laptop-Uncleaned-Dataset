@@ -1,16 +1,16 @@
-# 💻 Laptop Sales Dataset — Excel Cleaning & Standardization
+# Laptop Sales Dataset — Excel Cleaning & Standardization
 
 This project focuses on cleaning and standardizing a laptop sales dataset in Microsoft Excel. The data includes product names, specifications, pricing, ratings, operating systems, and more. The goal is to transform raw, messy product listing data into clean, structured, and analysis-ready information.
 
 ---
 
-## 📄 Dataset Description
+## Dataset Description
 
 - **Source**: Web-scraped listings of laptops (e.g., from 91mobiles)
 - **Format**: Excel spreadsheet with multiple columns containing mixed types, inconsistent formats, and some missing values
 - **Rows**: Each row represents a unique laptop model
 
-### 🔑 Key Columns
+### Key Columns
 - `name`: Product title
 - `price`: Selling price (numeric)
 - `storage`: RAM + SSD specs in text form
@@ -20,7 +20,7 @@ This project focuses on cleaning and standardizing a laptop sales dataset in Mic
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Clean inconsistent formatting and naming
 - Extract structured data from compound fields (e.g., RAM/SSD from `storage`)
@@ -30,12 +30,13 @@ This project focuses on cleaning and standardizing a laptop sales dataset in Mic
 
 ---
 
-## 🔧 Cleaning Steps (Formulas Used)
+## Cleaning Steps (Formulas Used)
 
-### 1. 🖥 OS Standardization
+### 1. OS Standardization
 
 Remove leading dashes from `system_name`:
 ```excel
+
 =TRIM(SUBSTITUTE(L2,"-",""))
 
-## Augustine
+
